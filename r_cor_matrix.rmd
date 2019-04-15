@@ -22,6 +22,9 @@ flattenCorrMatrix <- function(cormat, pmat) {
 ```
 
 
+**convert 3 column correlation dataframe to correlation matrix**?
+
+
 
 **Example of usage**
 ```
