@@ -23,3 +23,48 @@ flattenCorrMatrix <- function(cormat, pmat) {
 
 
 
+**Example of usage**
+```
+library(Hmisc)
+res2<-rcorr(as.matrix(mtcars[,1:7]))
+flattenCorrMatrix(res2$r, res2$P)
+
+```
+#output
+#row column         cor            p
+#1   mpg    cyl -0.85216194 6.112697e-10
+#2   mpg   disp -0.84755135 9.380354e-10
+
+
+**visulization**
+
+#symnum() function
+```{r}
+
+
+```
+
+
+
+
+#Use corrplot() function: Draw a correlogram
+```{r}
+install.packages("corrplot")
+
+```
+
+
+#Use chart.Correlation(): Draw scatter plots
+```{r}
+install.packages("PerformanceAnalytics")
+library("PerformanceAnalytics")
+
+
+```
+
+
+#Use heatmap()
+```{r}
+
+
+```
