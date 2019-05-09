@@ -1,0 +1,33 @@
+##this is a markdown file for the xy_label
+
+#reference
+http://www.sthda.com/english/wiki/ggplot2-title-main-axis-and-legend-titles
+
+```{r}
+#functions can be used
+ggtitle(label) # for the main title
+xlab(label) # for the x axis label
+ylab(label) # for the y axis label
+labs(...) # for the main title, axis labels and legend titles
+```
+
+```{r}
+#change title and x, y label
+p + ggtitle("Plot of length \n by dose") +   xlab("Dose (mg)") + ylab("Teeth length")
+
+#or 
+p +labs(title="Plot of length \n by dose", x ="Dose (mg)", y = "Teeth length")
+
+## Modify legend titles
+p + labs(fill = "Dose (mg)")
+
+```
+
+**Change the appearance of the main title and axis labels**
+```{r}
+p + theme(
+plot.title = element_text(color="red", size=14, face="bold.italic"),
+axis.title.x = element_text(color="blue", size=14, face="bold"),
+axis.title.y = element_text(color="#993333", size=14, face="bold")
+)
+```
