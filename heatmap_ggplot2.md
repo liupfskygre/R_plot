@@ -9,3 +9,7 @@
 #https://jcoliver.github.io/learn-r/008-ggplot-dendrograms-and-heatmaps.html
 
 #http://www.sthda.com/english/wiki/ggplot2-quick-correlation-matrix-heatmap-r-software-and-data-visualization
+
+
+#fine scale heatmap
+https://stackoverflow.com/questions/48772829/heatmap-in-r-with-ggplot2
